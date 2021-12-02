@@ -20,7 +20,7 @@ spec:
     spec:
       containers:              
       - name: app-deployment
-        image: harbor.dev.afsmtddso.com/eherlim-harbor-project/app@sha256:8d2a5886c9fd81813caf84ecd54c0b2686a3a31127e1993cc31ff72dc0df1494
+        image: harbor.dev.afsmtddso.com/eherlim-harbor-project/app:49d0fd3-3b2da0e
         ports:
         - containerPort: 5000
         envFrom:
