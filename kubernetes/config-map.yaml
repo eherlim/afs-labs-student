@@ -4,4 +4,4 @@ metadata:
   name: feature-toggle 
   namespace: eherlim
 data:
-LOCATION_FEATURE_ENABLED: "False"
+  LOCATION_FEATURE_ENABLED: "False"
