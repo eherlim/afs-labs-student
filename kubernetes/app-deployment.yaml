@@ -8,7 +8,10 @@ metadata:
 spec:
   replicas: 1
   strategy:
-    type: Recreate
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
   minReadySeconds: 20  
   selector:
     matchLabels:
@@ -20,7 +23,7 @@ spec:
     spec:
       containers:              
       - name: app-deployment
-        image: harbor.dev.afsmtddso.com/eherlim-harbor-project/app:aae940a-e797b78
+        image: harbor.dev.afsmtddso.com/eherlim-harbor-project/app:7f6be2c-e797b78
         ports:
         - containerPort: 5000
         envFrom:
